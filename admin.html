@@ -49,10 +49,24 @@
 
     <!-- 3. General Info -->
     <div class="info">
-      <h3 class="title-center margin-bottom-30px blue-color">Substainability</h3>
-      <h3 class="title-center margin-bottom-30px blue-color" id="ras">Recirculation Aquaculture System</h3>
-      <h3 class="title-center margin-bottom-30px blue-color" id="coho">Coho Salmon</h3>
-      <h3 class="title-center margin-bottom-30px blue-color" id="recipe">Consumption and Recipe</h3>
+      <h3 class="title-center margin-bottom-30px blue-color">Internal Discussion</h3>
+      <div class="discussion">
+        <iframe id="forum_embed"
+        src="javascript:void(0)"
+        scrolling="no"
+        frameborder="0"
+        width="900"
+        height="700">
+      </div>
+      </iframe>
+      <script type="text/javascript">
+        document.getElementById('forum_embed').src =
+           'https://groups.google.com/forum/embed/?place=forum/cohosalmon'
+           + '&showsearch=true&showpopout=true&showtabs=false'
+           + '&parenturl=' + encodeURIComponent(window.location.href);
+      </script>
+      <h3 class="title-center margin-bottom-30px blue-color">Internal Data</h3>
+
     </div>
 
     <!-- Divider -->
