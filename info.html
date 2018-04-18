@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Defining Web setup meta data info -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="myStyles.css">
+  <title>Musgrave Coho Farms</title>
+</head>
+
+
+  <body>
+    <!-- 1. Website logo-->
+    <div class="div-website-logo">
+      <img src="images/logo.png" alt="Musgrave Coho Farms Logo" class = "img-website-logo">
+    </div>
+
+    <!-- 2. Navigation bar-->
+    <div class="div-nav-bar">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a id="daily-farm-data-button" class="nav-link" href="index.html#daily-farm-data">Daily Farm Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="info.html">Substainability</a>
+        </li>
+        <li class="nav-item">
+          <a id="senior-team-button" class="nav-link" href="index.html#senior-team">Senior Team</a>
+        </li>
+        <li class="nav-item">
+          <a id="contact-us-button" class="nav-link" href="#contact-us">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Admin Access</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 3. General Info -->
+    <div class="info">
+      <h3 class="title-center margin-bottom-30px blue-color">Substainability</h3>
+      <h3 class="title-center margin-bottom-30px blue-color" id="ras">Recirculation Aquaculture System</h3>
+      <h3 class="title-center margin-bottom-30px blue-color" id="coho">Coho Salmon</h3>
+      <h3 class="title-center margin-bottom-30px blue-color" id="recipe">Consumption and Recipe</h3>
+      <iframe id="forum_embed"
+  src="javascript:void(0)"
+  scrolling="no"
+  frameborder="0"
+  width="900"
+  height="700">
+</iframe>
+<script type="text/javascript">
+  document.getElementById('forum_embed').src =
+     'https://groups.google.com/forum/embed/?place=forum/cohosalmon'
+     + '&showsearch=true&showpopout=true&showtabs=false'
+     + '&parenturl=' + encodeURIComponent(window.location.href);
+</script>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"><hr></div>
+
+    <!-- 7. Footer-Contact us -->
+    <div class="footer-contact-us" id="contact-us">
+      <!--
+      <div class="foot-background">
+        <h1>Coho Salmon Farm</h1>
+        <h1>(xxx)xxx-xxxx</h1>
+      </div>-->
+      <h2 class="title-center margin-bottom-30px blue-color">Contact Us</h2>
+
+      <div class="media">
+      <iframe class="farm-location" frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?q=Musgrave%20farm
+          &key=AIzaSyCRIP9AUnvAI29pvIwsVBeIjU-ZkmripUw
+          &zoom=9" allowfullscreen></iframe>
+        <div class="media-body footer-description">
+          <p class="footer-subtitle">Email</p>
+          <p>xxx@musgrave.com</p>
+          <br>
+          <p class="footer-subtitle">Phone</p>
+          <p>1(xxx)xxx-xxxx</p>
+          <br>
+          <p class="footer-subtitle">Address</p>
+          <p>Musgrave Research Farm <br> 1256 Poplar Ridge Rd <br> Aurora, NY 13026</p>
+          <br><br>
+          <canvas id="moving-fish" height="100px" width="250%"> </canvas>
+        </div>
+      </div>
+
+      <div class="footer-lastline">
+        <p align="center" class="blue-color">© 2018 Musgave Coho Farms</p>
+      </div>
+    </div>
+
+  <!-- Script for moving fish -->
+  <script type='text/javascript'>
+    window.addEventListener('load', function () {
+      var img = new Image, ctx = document.getElementById('moving-fish').getContext('2d');
+      img.src = 'images/logo.png';
+      img.addEventListener('load', function () {
+        var interval = setInterval(function() {
+          var x = ctx.canvas.width, y = 0;
+          return function () {<!--www.java2s.com-->
+            ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+            ctx.drawImage(img, x, y);
+            x -= 2;
+            if (x < -900) {
+              x = ctx.canvas.width;
+            }
+          };
+        }(), 1000/40);
+      }, false);
+    }, false);
+  </script>
+	<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Dec 4, 2017 10:00:00").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+      // Get todays date and time
+      var now = new Date().getTime();
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+  <!-- Javascript to scroll down--> <!-- Acknowledgement: https://zengabor.github.io/zenscroll/#howtouse -->
+  <script src="zenscroll-min.js"></script>
+  <!-- Popovers -->
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+  </body>
+
+</html>

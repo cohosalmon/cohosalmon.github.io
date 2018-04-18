@@ -1,200 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="myStyles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Saira+Extra+Condensed" rel="stylesheet">
-    <title>Coho Salmon Farm</title>
-  </head>
+
+<!-- Defining Web setup meta data info -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="myStyles.css">
+  <title>Musgrave Coho Farms</title>
+</head>
+
 
   <body>
-  	<!-- Page header -->
-  	<div class="page-header">
-      <div class="page-header2">
-          <img src="images/logo.jpg" alt="Coho Logo" class = "header-logo">
-		      <h1 class="header-font">Coho Salmon Farm</h1>
-      </div>
-  	</div>
+    <!-- 1. Website logo-->
+    <div class="div-website-logo">
+      <img src="images/logo.png" alt="Musgrave Coho Farms Logo" class = "img-website-logo">
+    </div>
 
-  	<!-- Navigation bar -->
-    <div class="newnav">
-  	<nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!--<div class="container-fluid">
-          <a href="#"><span class="glyphicon glyphicon-star-empty"></span></a>-->
-    	  </div>
-      </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse newnav" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="">Daily Farm Data</a></li>
-        <li><a href="">Substainability</a></li>
-        <li><a href="">About Us</a></li>
+    <!-- 2. Navigation bar-->
+    <div class="div-nav-bar">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a id="daily-farm-data-button" class="nav-link" href="#daily-farm-data">Daily Farm Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="info.html">Substainability</a>
+        </li>
+        <li class="nav-item">
+          <a id="senior-team-button" class="nav-link" href="#senior-team">Senior Team</a>
+        </li>
+        <li class="nav-item">
+          <a id="contact-us-button" class="nav-link" href="#contact-us">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Admin Access</a>
+        </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-    </nav>
-</div>
+    </div>
 
+    <!-- 3. Image Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" >
+          <div class="generalslide slide1"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Caring and dedication to raise</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="generalslide slide2"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Local, organic, fresh, sustainable</h2>
+        </div>
+        </div>
+        <div class="carousel-item">
+          <div class="generalslide slide3"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h2>High protein diet, high Omega-3 levels</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="generalslide slide4"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Cornell Coho Salmon Farm</h2>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
-    <!-- Image carousel -->
-<!-- Surround everything with a div with the class carousel slide -->
-<div id="theCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Define how many slides to put in the carousel -->
-  <ol class="carousel-indicators">
-    <li data-target="#theCarousel" data-slide-to="0" class="active"> </li >
-    <li data-target="#theCarousel" data-slide-to="1"> </li>
-    <li data-target ="#theCarousel" data-slide-to="2"> </li>
-  	<li data-target ="#theCarousel" data-slide-to="3"> </li>
-  </ol >
+    <!-- Divider -->
+    <div class="divider"><hr></div>
 
-  <!-- Define the text to place over the image -->
-  <div class="carousel-inner">
-    <div class="item active" >
-      <div class="slide1"></div>
-      <div class="carousel-caption">
-        <h2>Caring and dedication to raise</h2>
+    <!-- 4. Three Cards -->
+    <div class="card-deck card-margin">
+      <div class="card">
+        <!-- support images of 408x360-->
+        <img class="card-img-top" src="images/card-RAS.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Recirculation Aquaculture System</h5>
+          <p class="card-text">Our coho farms employ cutting-edge RAS technology to raise coho salmons. RAS is environmentally sustainable.
+          Compared to conventional aquaculture systems, our system uses 95% less water, less than 1% of the land area, are free of
+          environmental contaminants and diseases, and provide for environmentally safe waste management treatment...</p>
+          <p class="card-text text-center"><a class="learn-more" href="info.html#ras">LEARN MORE</a></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/card-coho.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Coho Salmon</h5>
+          <p class="card-text">The coho salmon is a species of anadromous fish in the salmon family, one of the several species
+            of Pacific salmon. Coho salmon are also known as silver salmon or "silvers". Mature adults have a pronounced red
+            skin color with darker backs and average 28 inches (71 cm) and 7 to 11 pounds (3.2 to 5.0 kg), occasionally
+            reaching up to 36 pounds (16 kg)... </p>
+          <p class="card-text text-center"><a class="learn-more" href="info.html#coho">LEARN MORE</a></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/card-eat-01.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Consumption and Recipe</h5>
+          <p class="card-text">Coho salmon has rich, reddish-orange meat. It's nutritionally riched in proteins and Omega-3
+             fatty acids that benefit human health and prevent heart disease. Coho salmon has also been called one of the
+              best tasting salmon. It can be pan seared, poached, sauted...
+          </p>
+          <p class="card-text text-center"><a class="learn-more" href="info.html#recipe">LEARN MORE</a></p>
+        </div>
       </div>
     </div>
-    <div class="item">
-      <div class="slide2"></div>
-      <div class="carousel-caption">
-        <h2>Local, organic, fresh, sustainable</h2>
-    </div>
-    </div>
-    <div class="item">
-      <div class="slide3"></div>
-      <div class="carousel-caption">
-      	<h2>High protein diet, high Omega-3 levels</h2>
+
+    <!-- Divider -->
+    <div class="divider"><hr></div>
+
+    <!-- 5. Daily Farm Data -->
+    <div class="daily-farm-data" id="daily-farm-data">
+      <h2 class="title-center margin-bottom-30px blue-color">Daily Farm Data</h2>
+      <div class="data-graph">
+        <iframe class="each-data-graph" width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSEnOEmsAm5FAtmP3sX4kusVtTM6YPY7MCNGJcLMO-rG54BOtgnKLsrbIbFrlPkq4jQKyZZw3aAATGp/pubchart?oid=787335728&amp;format=interactive"></iframe>
+        <iframe class="each-data-graph" width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSEnOEmsAm5FAtmP3sX4kusVtTM6YPY7MCNGJcLMO-rG54BOtgnKLsrbIbFrlPkq4jQKyZZw3aAATGp/pubchart?oid=803874634&amp;format=interactive"></iframe>
       </div>
     </div>
-    <div class="item">
-      <div class="slide4"></div>
-      <div class="carousel-caption">
-      	<h2>Cornell Coho Salmon Farm</h2>
-      </div>
-    </div>
-  </div>
 
-  <!-- Set the actions to take when the arrows are clicked -->
-  <a class="left carousel-control" href="#theCarousel" data-slide="prev">
-  <span class="glyphicon glyphicon-chevron-left"> </span>
-  </a>
-  <a class="right carousel-control" href="#theCarousel" data-slide="next">
-  <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-  </div>
+    <!-- Divider -->
+    <div class="divider"><hr></div>
 
-
-    <!--Page content -->
-    <div class="body-content first-page">
-    	<hr>
-    </div>
-
-    <div class="data-graph">
-      <h3 class="title-center">Daily Farm Data</h3>
-      <img class="media-object" src="images/data.jpg" alt="data">
-    </div>
-
-    <div class="body-content first-page">
-    	<hr>
-    </div>
-
-    <div class="video">
-      <h3 class="title-center">Watch Live Stream of Our Farm</h3>
+    <!-- 6. Live Video -->
+    <div class="live-video">
+      <h2 class="title-center margin-bottom-30px blue-color">Watch Live Stream of Our Farm</h2>
       <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FEiOjdr9Nz4?autoplay=1"  frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 
-    <div class="body-content first-page">
-    	<hr>
+    <!-- Divider -->
+    <div class="divider"><hr></div>
+
+    <!-- 6.5 Meet the team -->
+    <div class="senior-team" id="senior-team">
+      <h2 class="title-center margin-bottom-30px blue-color">Meet the Senior Team</h2>
+      <div class="card-deck">
+        <div class="card">
+          <a tabindex="0" class="btn btn-light" role="button" data-toggle="popover"
+          data-trigger="focus" title="Ed Heslop"
+          data-content="Prior to joining Environmental Credit Corporation, Ed co-founded Ecovation and served as Chairman, CEO, President and Chief Operating Officer. Ecovation, an innovative technology early stage growth company in the wastewater and energy sector, completed an $18(+)mm venture financing in 2003. Previously, Mr. Heslop co-founded several companies, including Paracelsian, Inc., a biotechnology company. Paracelsian progressed from founding through several rounds of financing, culminating in an initial public offering in 22 months.">
+            <img class="card-img-top team-image" src="images/team1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Ed Heslop</h5>
+              <p class="card-text title-center">CEO</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <div tabindex="0" class="btn btn-light" role="button" data-toggle="popover"
+          data-trigger="focus" title="Michael Timmons"
+          data-content="Mike Timmons is a Professor in the Department of Biological and Environmental Engineering. His program is centered on entrepreneurial-driven enterprise. He provides a foundation of information related to the production of aquacultured products, both fresh and saltwater, with an emphasis on sustainable and environmentally friendly engineering technologies.
+          He works with private industry to improve technology of water recirculating systems for producing fin and shellfish. Each year for the last 15 years, he conducts a 1-week long short course on the principles of recirculating aquaculture.">
+            <img class="card-img-top team-image" src="images/team2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Michael Timmons</h5>
+              <p class="card-text title-center">Professor</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <a tabindex="0" class="btn btn-light" role="button" data-toggle="popover"
+          data-trigger="focus" title="Ed Heslop"
+          data-content="Prior to joining Environmental Credit Corporation, Ed co-founded Ecovation and served as Chairman, CEO, President and Chief Operating Officer. Ecovation, an innovative technology early stage growth company in the wastewater and energy sector, completed an $18(+)mm venture financing in 2003. Previously, Mr. Heslop co-founded several companies, including Paracelsian, Inc., a biotechnology company. Paracelsian progressed from founding through several rounds of financing, culminating in an initial public offering in 22 months.">
+            <img class="card-img-top team-image" src="images/team1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Ed Heslop</h5>
+              <p class="card-text title-center">CEO</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a tabindex="0" class="btn btn-light" role="button" data-toggle="popover"
+          data-trigger="focus" title="Michael Timmons"
+          data-content="Mike Timmons is a Professor in the Department of Biological and Environmental Engineering. His program is centered on entrepreneurial-driven enterprise. He provides a foundation of information related to the production of aquacultured products, both fresh and saltwater, with an emphasis on sustainable and environmentally friendly engineering technologies.
+          He works with private industry to improve technology of water recirculating systems for producing fin and shellfish. Each year for the last 15 years, he conducts a 1-week long short course on the principles of recirculating aquaculture.">
+            <img class="card-img-top team-image" src="images/team2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Michael Timmons</h5>
+              <p class="card-text title-center">Professor</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a tabindex="0" class="btn btn-light" role="button" data-toggle="popover"
+          data-trigger="focus" title="Ed Heslop"
+          data-content="Prior to joining Environmental Credit Corporation, Ed co-founded Ecovation and served as Chairman, CEO, President and Chief Operating Officer. Ecovation, an innovative technology early stage growth company in the wastewater and energy sector, completed an $18(+)mm venture financing in 2003. Previously, Mr. Heslop co-founded several companies, including Paracelsian, Inc., a biotechnology company. Paracelsian progressed from founding through several rounds of financing, culminating in an initial public offering in 22 months.">
+            <img class="card-img-top team-image" src="images/team1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Ed Heslop</h5>
+              <p class="card-text title-center">CEO</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <canvas id="myCanvas" height="200" width="1300"> </canvas>
+    <!-- Divider -->
+    <div class="divider"><hr></div>
 
-    <div class="body-content first-page">
-      <hr>
-    </div>
-
-    <!-- Footer -->
-    <div id="footer">
+    <!-- 7. Footer-Contact us -->
+    <div class="footer-contact-us" id="contact-us">
+      <!--
       <div class="foot-background">
         <h1>Coho Salmon Farm</h1>
         <h1>(xxx)xxx-xxxx</h1>
+      </div>-->
+      <h2 class="title-center margin-bottom-30px blue-color">Contact Us</h2>
+
+      <div class="media">
+      <iframe class="farm-location" frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?q=Musgrave%20farm
+          &key=AIzaSyCRIP9AUnvAI29pvIwsVBeIjU-ZkmripUw
+          &zoom=9" allowfullscreen></iframe>
+        <div class="media-body footer-description">
+          <p class="footer-subtitle">Email</p>
+          <p>xxx@musgrave.com</p>
+          <br>
+          <p class="footer-subtitle">Phone</p>
+          <p>1(xxx)xxx-xxxx</p>
+          <br>
+          <p class="footer-subtitle">Address</p>
+          <p>Musgrave Research Farm <br> 1256 Poplar Ridge Rd <br> Aurora, NY 13026</p>
+          <br><br>
+          <canvas id="moving-fish" height="100px" width="250%"> </canvas>
+        </div>
       </div>
-      <div class="container">
-        <p class="muted credit" align="center">Brought to you by Prof. Timmons, the best fishman!</p>
+
+      <div class="footer-lastline">
+        <p align="center" class="blue-color">© 2018 Musgave Coho Farms</p>
       </div>
     </div>
 
-
-
-    <!-- Bootstrap core JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script type='text/javascript'>//<![CDATA[
+  <!-- Script for moving fish -->
+  <script type='text/javascript'>
     window.addEventListener('load', function () {
-      var img = new Image, ctx = document.getElementById('myCanvas').getContext('2d');
-      img.src = 'images/moving_logo.png';
+      var img = new Image, ctx = document.getElementById('moving-fish').getContext('2d');
+      img.src = 'images/logo.png';
       img.addEventListener('load', function () {
         var interval = setInterval(function() {
           var x = ctx.canvas.width, y = 0;
-          return function () {<!--  w  ww. j  a  v a  2s .c  om-->
+          return function () {<!--www.java2s.com-->
             ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
             ctx.drawImage(img, x, y);
-            x -= 1;
-            if (x < 200) {
+            x -= 2;
+            if (x < -900) {
               x = ctx.canvas.width;
             }
           };
         }(), 1000/40);
       }, false);
     }, false);
-    //]]>
   </script>
-	<!--Competition Countdown Timer-->
 	<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Dec 4, 2017 10:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
+    // Set the date we're counting down to
+    var countDownDate = new Date("Dec 4, 2017 10:00:00").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+      // Get todays date and time
+      var now = new Date().getTime();
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+  <!-- Javascript to scroll down--> <!-- Acknowledgement: https://zengabor.github.io/zenscroll/#howtouse -->
+  <script src="zenscroll-min.js"></script>
+  <!-- Popovers -->
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
   </body>
 
 </html>
